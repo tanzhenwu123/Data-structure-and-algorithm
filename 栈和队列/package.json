@@ -1,0 +1,12 @@
+{
+  "name": "stackandqueue",
+  "version": "1.0.0",
+  "description": "> 什么是栈\r ```\r 栈类比于一个箱子，先进的，后取出\r ```\r > 什么是队列\r ```\r 队列类比于一根水管，先进的，先出\r ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --watch src -e ts --exec ts-node src/index"
+  },
+  "author": "",
+  "license": "ISC"
+}

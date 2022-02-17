@@ -1,4 +1,4 @@
-import { exchange } from "../BubbleSorting";
+import { compare, exchange } from "../BubbleSorting";
 let __arr:number[] = [4,1,6,9,3,2,8,7]
 
 function quickSort(arr:number[],begin:number,end:number){
@@ -16,5 +16,5 @@ function quickSort(arr:number[],begin:number,end:number){
     quickSort(arr,exPoint+1,end)
 }
 
-quickSort(__arr,0,__arr.length)
-console.log(__arr)
+// quickSort(__arr,0,__arr.length)
+// console.log(__arr)
