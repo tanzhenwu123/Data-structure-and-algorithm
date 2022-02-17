@@ -1,8 +1,8 @@
-interface nodeRule{
+export interface nodeRule{
     value:number,
     next:object|null
 }
-function createNode(val:number):nodeRule{
+export function createNode(val:number):nodeRule{
     return{
         value:val,
         next:null
@@ -20,13 +20,13 @@ c.next = d
 d.next = e
 
 // 递归链表
-function linkEach(val:nodeRule){
+export function linkEach(val:nodeRule){
     if(val.next == null) return
-    console.log(val)
+    console.log(val.value)
     linkEach((val.next) as nodeRule)
 }
 
-linkEach((a.next) as nodeRule)
+// linkEach((a.next) as nodeRule)
 
 const arr:number[] = [1,2,3,4,5]
 
@@ -36,4 +36,4 @@ function eachArr(_arr:number[],index:number){
     console.log(_arr[index])
     eachArr(_arr,index+= 1)
 }
-eachArr(arr,0)
+// eachArr(arr,0)
