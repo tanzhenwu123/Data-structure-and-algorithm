@@ -1,10 +1,10 @@
 let arr:number[] = [4,1,6,9,3,2,8,7]
 
-function compare(a:number,b:number):boolean{
+export function compare(a:number,b:number):boolean{
     return b < a
 }
 
-function exchange(arr:number[],a:number,b:number){
+export function exchange(arr:number[],a:number,b:number){
     const temp = arr[a]
     arr[a] = arr[b]
     arr[b] = temp
