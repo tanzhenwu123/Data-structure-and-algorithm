@@ -14,4 +14,4 @@ function selectSort(arr:number[]){
 }
 
 selectSort(_arr)
-console.log(_arr)
+// console.log(_arr)
