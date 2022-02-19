@@ -4,7 +4,7 @@ export interface nodeRule{
     right:nodeRule|null
 }
 
-function createNode(val:string,l?:nodeRule,r?:nodeRule):nodeRule{
+export function createNode(val:string,l?:nodeRule,r?:nodeRule):nodeRule{
     return{
         value:val,
         left:l as nodeRule,
