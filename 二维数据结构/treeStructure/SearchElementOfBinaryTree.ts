@@ -10,4 +10,20 @@ function deepSearch(obj:nodeRule,target:string):boolean{
     return left || right
 }
 
-console.log(deepSearch(a,'g'))
+// console.log(deepSearch(a,'g'))
+
+function spanSearch(obj:nodeRule[],target:string):boolean{
+    if(obj.length == 0) return false
+    const children:nodeRule[] = []
+    for(let i = 0 ; i < obj.length; i++){
+        console.log(obj[i].value)
+        if(obj[i].value == target) return true
+        else{
+            children.push((obj[i].left) as nodeRule)
+            children.push((obj[i].right) as nodeRule)
+        }
+    }
+    return spanSearch(children,target)
+}
+
+console.log(spanSearch([a],'f'))
