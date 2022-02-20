@@ -23,14 +23,15 @@ node1.child.push(node6)
 node2.child.push(node4)
 node2.child.push(node5)
 
-function deepSearch(node:treeNode){
-    if(node == null) return
-    console.log(node.value)
+function deepSearch(node:treeNode,target:string):boolean{
+    if(node == null) return false
+    if(node.value == target) return true
+    let result = false
     for(let i = 0; i < node.child.length;i++){
-        deepSearch(node.child[i])
+        result ||= deepSearch(node.child[i],target)
     }
+    return result
 }
 
-// deepSearch(node1)
-
+console.log(deepSearch(node1,'2'))
 export{node1}
