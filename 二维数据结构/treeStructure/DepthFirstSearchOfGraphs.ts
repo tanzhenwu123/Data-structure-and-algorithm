@@ -1,4 +1,4 @@
-interface chartRule{
+export interface chartRule{
     value:string,
     next:chartRule[]
 }
@@ -42,4 +42,6 @@ function deepSearch(node:chartRule,target:string,path:chartRule[]):boolean{
     return result
 }
 
-console.log(deepSearch(node1,'C',[]))
+// console.log(deepSearch(node1,'C',[]))
+
+export{node1}
