@@ -1,10 +1,10 @@
-interface searchRule{
+export interface searchRule{
     value:number,
     left:searchRule|null,
     right:searchRule|null
 }
 
-function createSearch(val:number):searchRule{
+export function createSearch(val:number):searchRule{
     return{
         value:val,
         left:null,
@@ -47,4 +47,4 @@ function search(tree:searchRule,num:number):boolean{
 
 const root = BuildSearchTree(array)
 
-console.log(search(root as searchRule,23))
+// console.log(search(root as searchRule,23))
