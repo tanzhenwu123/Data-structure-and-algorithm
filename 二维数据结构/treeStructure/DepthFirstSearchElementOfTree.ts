@@ -1,4 +1,4 @@
-interface treeNode{
+export interface treeNode{
     value:string,
     child:treeNode[]
 }
@@ -31,4 +31,6 @@ function deepSearch(node:treeNode){
     }
 }
 
-deepSearch(node1)
+// deepSearch(node1)
+
+export{node1}
